@@ -28,6 +28,7 @@ plt.title('Variance of Voxels Shared by Participants')
 plt.ylabel('# Occurrences')
 plt.xlabel('Variance')
 
+
 print('Saving fig...')
 plt.savefig('var_across_voxels.pdf', dpi=25)
 #plt.show()
