@@ -19,7 +19,6 @@ voxel_variance = [np.var(ptv[:, :, v].reshape(-1)) for v in range(ptv.shape[-1])
 
 input('Mean voxel variance: {}'.format(np.mean(voxel_variance)))
 
-
 print('Len vox var: {}'.format(len(voxel_variance)))
 hist_bins = list(np.arange(0,5,.1))
 print('bins: {}'.format(hist_bins))
