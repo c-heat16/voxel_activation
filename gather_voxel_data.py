@@ -79,6 +79,8 @@ for p_id in range(1, num_participants + 1):
     """
 
 print('Saving participant x trial x voxel data to file...')
+
+
 with open('participant_trial_voxel.pkl', 'wb') as f:
     pickle.dump(all_participant_data, f, protocol=2)
 
