@@ -1,3 +1,14 @@
+"""
+    Connor Heaton
+    DS 340W Project
+    Sp 19
+
+
+    DESC: A class file representing one file participant. The object has class variables as well as methods to save
+    data read from a .mat file to a dictionary.
+
+"""
+
 from scipy.io import loadmat
 from collections import defaultdict
 import numpy as np

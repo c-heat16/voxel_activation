@@ -1,3 +1,14 @@
+"""
+    Connor Heaton
+    DS 340W Project
+    Sp 19
+
+
+    DESC: Creates a bar plot displaying the rate of activation magnitude (i.e. # voxels with x amount of activation).
+        Saves a pdf of the image.
+
+"""
+
 import matplotlib.pyplot as plt
 import my_utilities as util
 from scipy import stats

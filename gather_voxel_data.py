@@ -1,3 +1,15 @@
+"""
+    Connor Heaton
+    DS 340W Project
+    Sp 19
+
+
+    DESC: Utilizes both the common_xyz.csv file of common voxel coords across all participants, as well as the p{}.pkl
+    files, to gather activation records of shared voxels across all participants and trials. Saves it to the two files
+    participant_trial_voxel.pkl and voxel_trial_participant.pkl.
+
+"""
+
 from collections import defaultdict
 
 import my_utilities as util
@@ -12,6 +24,7 @@ N_TRIALS = 360
 common_voxel_coords = util.read_file(common_voxel_file_name)
 common_voxel_coords = common_voxel_coords.astype(np.int32)
 NUM_COMMON_COORDS = common_voxel_coords.shape[0]
+
 print('Num common coords: {}'.format(common_voxel_coords.shape[0]))
 
 common_voxel_coords_list = [list(common_voxel_coords[i,:].reshape(-1)) for i in range(common_voxel_coords.shape[0])]

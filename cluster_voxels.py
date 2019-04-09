@@ -1,3 +1,14 @@
+"""
+    Connor Heaton
+    DS 340W Project
+    Sp 19
+
+
+    DESC: Will read in voxel activation records from a pickle file and train a kmeans model to cluster them based
+    on activation records.
+
+"""
+
 from collections import defaultdict
 from heapq import heappush, heappop
 from sklearn.cluster import KMeans

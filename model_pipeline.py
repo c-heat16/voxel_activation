@@ -1,3 +1,13 @@
+"""
+    Connor Heaton
+    DS 340W Project
+    Sp 19
+
+
+    DESC: Currently intended to be the groundwork for a pipeline to be used in model training.
+
+"""
+
 from collections import defaultdict
 from heapq import heappush, heappop
 from sklearn.cluster import KMeans

@@ -1,52 +1,24 @@
+"""
+    Connor Heaton
+    DS 340W Project
+    Sp 19
+
+
+    DESC: Performs operations on participant data depending on which file format it is told to work with, as defined by
+    the variable_LOAD TYPE. If LOAD_TYPE is set to 'mat', the script will read participant data from the Matlab (lol)
+    files provided by CMU, creating an object for each participant and saving it to a pickle file. Otherwise, the script
+    expects to see .pkl files for each participant object, and will find voxels shared among all participants, as
+    determined by their (x, y, z) coordinates. Shared voxels are then saved to a csv file.
+
+"""
+
 from study_participant import *
 from scipy.io import loadmat
 import numpy as np
 import pickle
 
-"""
-raw_data = loadmat('fMRI_data/data-science-P1.mat')
-
-data = raw_data['data']
-
-info = raw_data['info']
-meta = raw_data['meta']
-
-print('meta: {} Shape: {}'.format(type(meta), meta.shape))
-print('meta[0]: {}'.format(meta[0]))
-print('meta[0][0][0]: {}'.format(meta[0][0][0]))
-print('meta[0][0][1]: {}'.format(meta[0][0][1]))
-#print('meta[0][0]: {}'.format(meta[0][0][8]))
-
-
-print('Info: {} Shape: {}'.format(type(info), info.shape))
-print('Info[0]: {} Shape: {}'.format(type(info[0]), info[0].shape))
-print('Info[0, 0]: {}'.format(info[0,0]))
-print('Type Info[0, 0]: {}'.format(type(info[0, 0])))
-print('len info[0, 0]: {}'.format(len(info[0, 0])))
-
-for c in range(info.shape[1]):
-	print('c: {}'.format(c))
-	for i in range(len(info[0,0])):
-		print('\tinfo[0, {}][{}]: {}'.format(c, i, info[0, c][i]))
-
-
-print('Data type: {} Shape: {}'.format(type(data), data.shape))
-
-print('Type Data[0]: {} Shape data [0]: {}'.format(type(data[0]), data[0].shape))
-print('Data[0][0]: {}'.format(data[0][0]))
-print('Shape data[0][0]: {}'.format(data[0][0].shape))
-print('Shape data[0][0][0,0]: {}'.format(data[0][0][0,1]))
-
-#input('lol')
-"""
-
 
 def np_to_lst(np_arr):
-	out_set = set()
-	"""
-	for i in range(np_arr.shape[0]):
-		out_set.add(np_arr[i,:].reshape(-1))
-	"""
 	return [list(np_arr[i,:]) for i in range(np_arr.shape[0])]
 
 N_PARTICIPANTS = 9
@@ -54,6 +26,7 @@ LOAD_TYPE = 'mat'
 
 mat_file_tmplt = 'fMRI_data/mat/data-science-P{}.mat'
 pkl_file_tmplt = 'fMRI_data/pkl/p{}_v2.pkl'
+
 if LOAD_TYPE == 'mat':
 	for i in range(1, N_PARTICIPANTS + 1):
 		print('Cleaning participant {}...'.format(i))
