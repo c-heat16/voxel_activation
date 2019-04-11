@@ -1,9 +1,9 @@
 DS 340W dataset <br />
-As if April 11:\n
-Setting up voxel activiation \n
-waiting on VA to build model \n
+As if April 11:<br />
+Setting up voxel activiation <br />
+waiting on VA to build model <br />
 
-Todo: \n
-Model refinement \n
-Final presentation \n
+Todo: <br />
+Model refinement <br />
+Final presentation <br />
 Final report 
