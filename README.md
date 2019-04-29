@@ -12,4 +12,4 @@ get_mni_coordinates.m <br />
 <br />
 -> Pearson_Correlation.py <br />
 <br />
-Rest are from Conner
+Rest are from Connor
