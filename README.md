@@ -1,15 +1,15 @@
 DS 340W Final Project <br />
-Work Distribution: \\
-
-Andrea -> visualization folder \\
-Source from MNI website:\\ 
-ccbi_aal_atlas.mat
-mni2orFROMxyz.m
-Source from Science2008:
-demo.m
-get_aal_labels.m
-get_mni_coordinates.m
-
--> Pearson_Correlation.py
-
+Work Distribution: <br />
+<br />
+Andrea -> visualization folder <br />
+Source from MNI website:<br />
+ccbi_aal_atlas.mat <br />
+mni2orFROMxyz.m <br />
+Source from Science2008: <br />
+demo.m <br />
+get_aal_labels.m <br />
+get_mni_coordinates.m <br />
+<br />
+-> Pearson_Correlation.py <br />
+<br />
 Rest are from Conner
