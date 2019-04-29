@@ -1,8 +1,8 @@
 DS 340W Final Project <br />
-Work Distribution: 
+Work Distribution: \\
 
-Andrea -> visualization folder
-Source from MNI website:
+Andrea -> visualization folder \\
+Source from MNI website:\\ 
 ccbi_aal_atlas.mat
 mni2orFROMxyz.m
 Source from Science2008:
